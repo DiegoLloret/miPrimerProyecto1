@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Listado de personas</title>
+</head>
+<body>
+	<h1>ejemplo de paso de un listado desde un controller</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>edad</th>
+
+			</tr>
+		</thead>
+		<tbody th:each="persona : ${personas}">
+			<tr>
+				<th th:text="${persona.nombre}"></th>
+				<th th:text="${persona.edad}"></th>
+
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
